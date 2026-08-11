@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff5c8a">
+  <title>Happy Birthday Shreya ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-heart">❤️</div>
+    <p>Preparing a little surprise...</p>
+  </div>
+
+  <div id="confetti"></div>
+  <div class="hearts-bg" aria-hidden="true"></div>
+
+  <!-- Intro -->
+  <section id="intro" class="intro">
+    <div class="intro-card">
+      <div class="gift-wrap" id="gift">🎁</div>
+      <p class="eyebrow">A tiny website made with a big heart</p>
+      <h1>Hey, Shreya! 💕</h1>
+      <p class="intro-text">Someone made a little surprise for you.<br>Are you ready to open it?</p>
+      <button class="primary-btn" id="openBtn">Open My Surprise ✨</button>
+      <p class="tap-note">Turn your volume up 🎵</p>
+    </div>
+  </section>
+
+  <!-- Music -->
+  <div class="music-player">
+    <button id="musicBtn" class="music-btn" aria-label="Play or pause music">🎵 Play Music</button>
+    <iframe id="yt" title="Birthday music"
+      src="https://www.youtube.com/embed/LB5DhtD59fA?enablejsapi=1&loop=1&playlist=LB5DhtD59fA&rel=0"
+      allow="autoplay; encrypted-media"></iframe>
+  </div>
+
+  <main id="site" class="hidden">
+
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="stars">✦ ✧ ✦</div>
+      <p class="eyebrow">Today is all about you</p>
+      <h1>Happy Birthday</h1>
+      <h2>Shreya <span>❤️</span></h2>
+      <p class="hero-copy">May your day be as beautiful, warm and wonderful as your smile.</p>
+      <div class="cake">🎂</div>
+      <button class="secondary-btn" id="wishBtn">Make a Wish ✨</button>
+      <div class="scroll-hint">↓ scroll for your surprise ↓</div>
+    </section>
+
+    <!-- Message -->
+    <section class="section message-section">
+      <div class="glass-card message-card reveal">
+        <div class="section-icon">💌</div>
+        <p class="eyebrow">A little message</p>
+        <h2>Dear Shreya...</h2>
+        <p>
+          Today I just wanted to remind you that you are a genuinely
+          special person. Some people enter our lives and somehow make
+          ordinary moments feel a little brighter.
+        </p>
+        <p>
+          I hope this year gives you countless reasons to smile,
+          exciting new memories, peaceful moments, and the courage to
+          chase everything you dream about.
+        </p>
+        <p class="pink-text">Keep smiling. Keep shining. Keep being you. 💗</p>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <section class="section gallery-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A few beautiful moments</p>
+        <h2>Shreya's Gallery 📸</h2>
+        <p>Because some moments deserve to be remembered.</p>
+      </div>
+
+      <div class="gallery">
+        <button class="photo-card reveal" data-img="images/photo1.jpg" data-caption="That beautiful smile ❤️">
+          <img src="images/photo1.jpg" alt="Shreya photo 1">
+          <span>That smile ❤️</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo2.jpg" data-caption="Simply beautiful ✨">
+          <img src="images/photo2.jpg" alt="Shreya photo 2">
+          <span>Simply beautiful ✨</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo3.jpg" data-caption="A moment worth remembering 💕">
+          <img src="images/photo3.jpg" alt="Shreya photo 3">
+          <span>A moment worth remembering 💕</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo4.jpg" data-caption="Just being you 🌷">
+          <img src="images/photo4.jpg" alt="Shreya photo 4">
+          <span>Just being you 🌷</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Things -->
+    <section class="section things-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Three little things</p>
+        <h2>What makes you special? 💗</h2>
+      </div>
+      <div class="things-grid">
+        <article class="thing glass-card reveal">
+          <div>😊</div><h3>Your Smile</h3>
+          <p>It has a way of making everything feel a little lighter.</p>
+        </article>
+        <article class="thing glass-card reveal">
+          <div>✨</div><h3>Your Vibe</h3>
+          <p>There is something about you that is simply hard to forget.</p>
+        </article>
+        <article class="thing glass-card reveal">
+          <div>🌷</div><h3>Your Presence</h3>
+          <p>Some people make moments special just by being there.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Wish -->
+    <section class="section wish-section">
+      <div class="wish-card reveal">
+        <div class="big-cake">🎂</div>
+        <h2>Make a Birthday Wish</h2>
+        <p>Close your eyes, make a wish and press the button. ✨</p>
+        <button class="primary-btn" id="magicBtn">My Wish Is Made 💫</button>
+        <div id="wishResult" class="wish-result">
+          <span>✨</span>
+          <p>May this year bring you closer to every dream in your heart. ❤️</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section class="section final-section">
+      <div class="final-card glass-card reveal">
+        <div class="heart-pulse">❤️</div>
+        <p class="eyebrow">One last little surprise...</p>
+        <h2>There is something I want you to know.</h2>
+        <p>
+          I hope whenever you look back at this birthday, you remember
+          that someone was wishing you nothing but happiness.
+        </p>
+        <button class="primary-btn" id="finalBtn">Open The Final Message 💌</button>
+        <div id="finalMessage" class="final-message">
+          <div class="sparkle-line">✦ ✧ ✦</div>
+          <h3>Happy Birthday, Shreya! ❤️</h3>
+          <p>
+            Stay happy. Stay amazing. And never stop smiling.
+            You deserve beautiful things and beautiful moments.
+          </p>
+          <div class="signature">With a little extra care,<br>someone who thinks you're special 💕</div>
+          <div class="hearts">❤️ 💗 💕 💖</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Made especially for Shreya with ❤️
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button id="closeLightbox" class="close-btn">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <div id="toast" class="toast">✨ Surprise!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
